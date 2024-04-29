@@ -1,32 +1,29 @@
 {
-    "name": "@types/formidable",
-    "version": "1.2.8",
-    "description": "TypeScript definitions for formidable",
-    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/formidable",
-    "license": "MIT",
-    "contributors": [
-        {
-            "name": "Wim Looman",
-            "githubUsername": "Nemo157",
-            "url": "https://github.com/Nemo157"
-        },
-        {
-            "name": "Martin Badin",
-            "githubUsername": "martin-badin",
-            "url": "https://github.com/martin-badin"
-        }
-    ],
-    "main": "",
-    "types": "index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-        "directory": "types/formidable"
-    },
-    "scripts": {},
-    "dependencies": {
-        "@types/node": "*"
-    },
-    "typesPublisherContentHash": "9d28022a70477f8127f7405abd3a48dbbf46ce2b82ea2a81db773fb19d8427f5",
-    "typeScriptVersion": "4.5"
+  "name": "formidable",
+  "version": "1.2.6",
+  "license": "MIT",
+  "description": "(DEPRECATED! Install formidable@v2) A node.js module for parsing form data, especially file uploads.",
+  "homepage": "https://github.com/node-formidable/formidable",
+  "funding": "https://ko-fi.com/tunnckoCore/commissions",
+  "repository": "node-formidable/formidable",
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "v1"
+  },
+  "devDependencies": {
+    "gently": "^0.8.0",
+    "findit": "^0.1.2",
+    "hashish": "^0.0.4",
+    "urun": "^0.0.6",
+    "utest": "^0.0.8",
+    "request": "^2.11.4"
+  },
+  "scripts": {
+    "test": "node test/run.js",
+    "clean": "rm test/tmp/*"
+  }
 }
